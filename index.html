@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artem Konotopchyk</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="mediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+        
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Artem Konotopchyk</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about"> Main</a></li>
+                <li><a href="#about"> Projects</a></li>
+                <li><a href="#about"> Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Artem Konotopchyk</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#main" onclick="toggleMenu()"> Main</a></li>
+                <li><a href="#projects" onclick="toggleMenu()"> Projects</a></li>
+                <li><a href="#contacts" onclick="toggleMenu()"> Contacts</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Artem Konotopchyk profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hey, I'm</p>
+            <h1 class="title">Artem Konotopchyk</h1>
+            <p class="section__text__p2">Python Developer</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
