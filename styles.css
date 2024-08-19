@@ -308,3 +308,11 @@ section{
     width: 75px;
 
 }
+
+.details-container{
+    padding: 1.5rem;
+    background: white;
+    border-radius: 2.5rem;
+    border: rgb(104, 100, 100) 0.1rem solid;
+    text-align: center;
+}
