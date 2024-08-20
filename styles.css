@@ -156,36 +156,40 @@ section{
 /* PROFILE SECTION */
 
 #profile{
-    display: flex;
+    display: block;
     justify-content: center;
     gap: 5em;
     height: 50vh;
 }
 
 .section__pic-container{
-    display: flex;
     height: 500px;
     width: 500px;
     border-radius: 50%;
     overflow: hidden;
-    display:inline-block;
+    display:flex;
+    float: left;
 }
 
 .section__text{
+    padding-top: 10rem;
     align-self: center;
     text-align: center;
 }
 
-.section__text p{
+.section__text p, .section__text__p1{
     font-weight: 600;
 }
 
 .section__text__p1{
     text-align: center;
+    color: rgb(95, 96, 97);
+    font-size: larger;
 }
 .section__text__p2{
     font-size: 1.75 rem;
     margin-bottom: 1rem;
+    color: rgb(95, 96, 97);
 }
 
 .title{
@@ -194,7 +198,7 @@ section{
 }
 
 #socials-container{
-    display: flex;
+    display: block;
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
@@ -258,61 +262,111 @@ section{
 
 #about{
     position: relative;
+    height: 40rem;
 }
 
-.about-container{
+.about-containers{
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    font-size: larger;
+    width: 50rem;
+    
 }
 
 .about-details-container{
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
-.about-container{
-    font-size: larger;
-}
-
-.about-container p{
-    font-size: larger;
-    font-weight: 300;
-}
 
 .text-container{
-    font-size: large;
-    font-weight: 200;
+    margin-left: 8%;
+    font-size: larger;
+    font-weight: 400;
+    
 }
 
-.about-container, .about-details-container{
+.about-containers, .about-details-container{
     display: flex;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-pic{
-    border-radius: 2rem;
     display: flex;
-    height: 500px;
-    width: 500px;
-    border-radius: 50%;
-    overflow: hidden;
-    display:inline-block;
+    height: 25em;
+    width: 35rem;
+    border-radius: 2.5rem;
+    float: left;
 }
+
+
+.details-containers {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+  }
 
 .icon-arrow{
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem;
+    bottom: 1rem;
     height: 75px;
     width: 75px;
 
 }
 
-.details-container{
-    padding: 1.5rem;
-    background: white;
-    border-radius: 2.5rem;
-    border: rgb(104, 100, 100) 0.1rem solid;
-    text-align: center;
+.section-container{
+    gap: 4rem;
+    
+}
+
+/* STACK OF TECHNOLOGIES SECTION */
+
+#stack{
+    position: relative;
+}
+
+.stack-sub-title{
+    color: rgb(95, 96, 97);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+
+.stack-details-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.stack-containers{
+    display: flex;
+}
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    padding: 2rem;
+
+}
+
+article{
+    display: flex;
+    width: 9rem;
+    gap: 0.5rem;
+}
+
+article .icon{
+    cursor: default;
 }
