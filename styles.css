@@ -370,3 +370,10 @@ article{
 article .icon{
     cursor: default;
 }
+
+/* PROJETS SECTION */
+
+#projects{
+    position: relative;
+}
+
