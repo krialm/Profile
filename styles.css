@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family: "Sedan", serif;
+    font-family: "PT Serif", serif;
 }
 
 html{
@@ -420,6 +420,7 @@ article .icon{
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    margin-top: 0;
 }
 
 .contact-info-upper-container{
@@ -440,6 +441,19 @@ article .icon{
     gap: 0.5rem;
     margin: 1rem;
 }
+
+.contact-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.phone-contact-image{
+    cursor: default;
+}
+
+
 
 .contact-info-container p{
     font-size: larger;
