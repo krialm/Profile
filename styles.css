@@ -356,8 +356,8 @@ section{
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
-    padding: 2rem;
+    gap: 2rem;
+    padding: 1.5rem;
 
 }
 
@@ -377,3 +377,35 @@ article .icon{
     position: relative;
 }
 
+.experience-details-container{
+    display: flex;
+}
+
+.details-containers{
+    margin: 1rem;
+}
+
+.color-container{
+    border: rgb(53, 53, 53) 0.1rem solid;
+    background: white;
+}
+
+.project-img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-title{
+    margin: 1rem;
+    color: black;
+}
+
+.project-btn{
+    color: black;
+    border-color: rgb(53, 53, 53) 0.1rem solid;
+    font-weight: 600;
+    font-size: large;
+}
