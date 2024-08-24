@@ -6,7 +6,8 @@
 }
 
 body{
-    font-family: "Sedan", serif;
+    font-family: "Roboto", sans-serif;
+    background-color: #F5F5F5;
 }
 
 html{
@@ -14,7 +15,7 @@ html{
 }
 
 p{
-    color: rgb(25, 25, 25)
+    color: #1C2833;
 }
 
 /* TRANSITION */
@@ -144,7 +145,7 @@ a:hover{
 section{
     padding-top: 4vh;
     height: 96vh;
-    margin: 0 10rem;
+    margin: 0 5rem;
     box-sizing: 'border-box';
     min-height: 'fit-content';
 }
@@ -159,7 +160,7 @@ section{
     display: block;
     justify-content: center;
     gap: 5em;
-    height: 50vh;
+    height: 40vh;
 }
 
 .section__pic-container{
@@ -183,18 +184,19 @@ section{
 
 .section__text__p1{
     text-align: center;
-    color: rgb(95, 96, 97);
+    color: #828282;
     font-size: larger;
 }
 .section__text__p2{
     font-size: 1.75 rem;
     margin-bottom: 1rem;
-    color: rgb(95, 96, 97);
+    color: #828282;
 }
 
 .title{
     font-size: 3rem;
     text-align: center;
+    color: #000;
 }
 
 #socials-container{
@@ -228,7 +230,7 @@ section{
 }
 
 .btn-color-2, .btn-color-1{
-    border: rgb(87, 87, 87) 0.1rem solid;
+    border: #000 0.1rem solid;
 }
 
 .btn-color-2 :hover, .btn-color-1 :hover{
@@ -247,7 +249,7 @@ section{
 }
 
 .btn-color-2:hover{
-    border: white 0.1rem solid;
+    border: #f9e5e7 0.1rem solid;
 }
 
 .btn-color-2{
@@ -261,22 +263,37 @@ section{
 /* ABOUT SECTION */
 
 #about{
+    display: block;
     position: relative;
-    height: 40rem;
+    height: auto;
+    margin-top: 2%;
 }
 
-.about-containers{
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    font-size: larger;
-    width: 50rem;
-    
+.section-container{
+    gap: 4rem;
+}
+
+.about-pic{
+    height: 40vh;
+    width: 55vh;
+    border-radius: 2.5rem;
+}
+
+.about-containers, .about-details-container{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-details-container{
     justify-content: center;
     flex-direction: column; 
+}
+
+.about-containers{
+    justify-content: center;
+    font-size: larger;
+    
 }
 
 
@@ -287,20 +304,6 @@ section{
     
 }
 
-.about-containers, .about-details-container{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.about-pic{
-    display: flex;
-    height: 25em;
-    width: 35rem;
-    border-radius: 2.5rem;
-    float: left;
-}
-
 
 .details-containers {
     padding: 1.5rem;
@@ -308,7 +311,7 @@ section{
     background: white;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    border-color: #473638;
     text-align: center;
   }
 
@@ -321,17 +324,27 @@ section{
 
 }
 
-.section-container{
-    gap: 4rem;
-    
-}
 
 /* STACK OF TECHNOLOGIES SECTION */
 
 #stack{
     position: relative;
-    height: 70%;
+    height: auto;
     margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.stack-details-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+
+}
+
+.stack-containers{
+    display: flex;
+
 }
 
 .stack-sub-title{
@@ -341,18 +354,10 @@ section{
     margin-bottom: 2rem;
 }
 
-
-.stack-details-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 40rem;
-
+.article-container p{
+    color: #828282;
 }
 
-.stack-containers{
-    display: flex;
-}
 
 .article-container{
     display: flex;
@@ -378,10 +383,12 @@ article .icon{
 
 #projects{
     position: relative;
+    height: auto;
 }
 
 .experience-details-container{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .details-containers{
@@ -389,7 +396,7 @@ article .icon{
 }
 
 .color-container{
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: #473638 0.1rem solid;
     background: white;
 }
 
@@ -408,7 +415,7 @@ article .icon{
 
 .project-btn{
     color: black;
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: #473638 0.1rem solid;
     font-weight: 600;
     font-size: large;
 }
@@ -419,14 +426,15 @@ article .icon{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: auto;
+    margin-top: 10vh;
 }
 
 .contact-info-upper-container{
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border:rgb(53, 53, 53) 0.1rem solid;
+    border:#473638 0.1rem solid;
     background: white;
     margin: 2rem auto;
     padding: 0.5rem;
@@ -443,6 +451,17 @@ article .icon{
 
 .contact-info-container p{
     font-size: larger;
+}
+
+.contact-info-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.phone-icon{
+    cursor: default;
 }
 
 /* FOOTER SECTION */

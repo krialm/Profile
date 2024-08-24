@@ -1,6 +1,5 @@
 @media screen and (max-width: 1400px) {
     #profile{
-        height: 8vh;
         margin-bottom: 6rem;
     }
     .about-containers{
@@ -42,6 +41,11 @@
     .about-containers{
         margin-top: 0;
     }
+    .stack-containers{
+        display: flex;
+        flex-direction: column;
+    
+    }
 }
 
 
@@ -51,9 +55,19 @@
     }
     
     #profile{
-        height: 83vh;
         margin-bottom: 0;
+        display: block;
+        justify-content: center;
+        gap: 5em;
+        height: 50vh;
     }
+    
+    #about{
+    position: relative;
+    height: auto;
+    margin-top: 10vh;
+    }
+
     article{
         font-size: 1rem;
     }
@@ -76,7 +90,7 @@
     .project-sub-title{
         font-size: 1.25rem;
     }
-    
+
     .logo{
         font-size: 1.25rem;
     }
@@ -93,5 +107,10 @@
     }
     .text-container{
         text-align: justify;
+    }
+    .stack-containers{
+        display: flex;
+        flex-direction: column;
+    
     }
 }
