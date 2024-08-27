@@ -269,31 +269,27 @@ section{
     margin-top: 2%;
 }
 
-.section-container{
-    gap: 4rem;
-}
-
 .about-pic{
     height: 40vh;
-    width: 55vh;
+    width: 30vh;
     border-radius: 2.5rem;
 }
 
 .about-containers, .about-details-container{
     display: flex;
-    margin-left: auto;
     margin-right: auto;
 }
 
 .about-details-container{
     justify-content: center;
     flex-direction: column; 
+    
 }
 
 .about-containers{
     justify-content: center;
     font-size: larger;
-    
+    margin-left: auto;
 }
 
 

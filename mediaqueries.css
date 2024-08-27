@@ -1,10 +1,12 @@
 @media screen and (max-width: 1400px) {
-    #profile{
-        margin-bottom: 6rem;
-    }
     .about-containers{
         flex-wrap: wrap;
     }
+    .about-pic{
+        display: block;
+        margin: auto;
+    }
+    
 }
 @media screen and (max-width: 1200px) {
     #desktop-nav{
@@ -46,6 +48,10 @@
         flex-direction: column;
     
     }
+    .about-pic{
+        display: block;
+        margin: auto;
+    }
 }
 
 
@@ -59,13 +65,12 @@
         display: block;
         justify-content: center;
         gap: 5em;
-        height: 50vh;
+        height: 50%;
     }
     
     #about{
     position: relative;
     height: auto;
-    margin-top: 10vh;
     }
 
     article{
@@ -112,5 +117,9 @@
         display: flex;
         flex-direction: column;
     
+    }
+    .about-pic{
+        display: block;
+        margin: auto;
     }
 }
